@@ -2,24 +2,24 @@
 class Orninject < Formula
   desc "orninject is a template engine used to manage Docker images templates repositories."
   homepage "https://ornikar.github.io/orninject/"
-  version "1.0.0"
+  version "1.1.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/ornikar/orninject/releases/download/v1.0.0/orninject_1.0.0_Darwin_x86_64.tar.gz"
-    sha256 "450657a62842493a746930f51f498d5eb73e0828c3294ef7fdc69cba5e166bd8"
+    url "https://github.com/ornikar/orninject/releases/download/v1.1.0/orninject_1.1.0_Darwin_x86_64.tar.gz"
+    sha256 "09082648b2cab94c9c8ec58c9802a40664c4b115c2b2c15e5c6c752fd1af6371"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/ornikar/orninject/releases/download/v1.0.0/orninject_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "c1258b4c648a2fb9884d7af9e59557465f961b047ee29c70f03e4161dfb38a71"
+      url "https://github.com/ornikar/orninject/releases/download/v1.1.0/orninject_1.1.0_Linux_x86_64.tar.gz"
+      sha256 "dfd3c25adec74c9df56684f49444b1382a74e69b22298b608400fabcbf05af64"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ornikar/orninject/releases/download/v1.0.0/orninject_1.0.0_Linux_arm64.tar.gz"
-        sha256 "cddd5af7a3f762e597d4e78ac206bed4545af130a956716b6739a5aec8e4c204"
+        url "https://github.com/ornikar/orninject/releases/download/v1.1.0/orninject_1.1.0_Linux_arm64.tar.gz"
+        sha256 "d34c3b659c5226f47edd677bac92b5054d3baefbd94740accb3c2d8e4992b945"
       else
-        url "https://github.com/ornikar/orninject/releases/download/v1.0.0/orninject_1.0.0_Linux_armv6.tar.gz"
-        sha256 "5aa1ed8dffd447205b155a59009271ee5d1436552d062be584870ebff1647d97"
+        url "https://github.com/ornikar/orninject/releases/download/v1.1.0/orninject_1.1.0_Linux_armv6.tar.gz"
+        sha256 "4d6f9029b752828bc12d1cb961ce18f412b5d078ce4676876f14ab5b9cd62ba4"
       end
     end
   end
